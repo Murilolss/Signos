@@ -2,6 +2,11 @@
 #include <stdlib.h>
 #include "signos.c"
 
+// Programa para saber qual é o signo do Usuário 
+// Dupla: Murilo Leandro e Liliane Perim
+// Data de Criação: 22/04/2026
+// Ultima Modificação: 23/04/2026
+
 void menu();
 
 int main()
@@ -25,8 +30,8 @@ int main()
             printf("Digite seu mes de nascimento: ");
             scanf("%d", &mes);
 
-            // printf("Seu signo eh: ");
-            // signos(dia, mes);
+            // Função Prara saber o Signo
+            signos(dia, mes);
 
             break;
 
