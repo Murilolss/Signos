@@ -1,20 +1,52 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "signos.c"
 
-int main(){
+void menu();
 
-    int dia, mes, ano;
+int main()
+{
+    int dia, mes, escolha;
 
-    printf("Digite seu dia de nascimento: ");
-    scanf("%d", &dia);
+    do
+    {
+        system("cls");
+        menu();
+        printf("\nSelecione uma Opcao: ");
+        scanf("%d", &escolha);
 
-    printf("Digite seu mes de nascimento: ");
-    scanf("%d", &mes);
+        switch (escolha)
+        {
+        case 1:
+            system("cls");
+            printf("Digite seu dia de nascimento: ");
+            scanf("%d", &dia);
 
-    printf("Digite seu ano de nascimento: ");
-    scanf("%d", &ano);
+            printf("Digite seu mes de nascimento: ");
+            scanf("%d", &mes);
 
-    // printf("Seu signo é: ", signo);
-    // printf("Características do signo: ", caracteristicas);
+            // printf("Seu signo eh: ");
+            // signos(dia, mes);
 
+            break;
+
+        case 2:
+            printf("Programa Encerrado");
+            break;
+
+        default:
+            system("cls");
+            printf("Opcao Invalida\n");
+            break;
+        }
+
+    } while (escolha != 2);
     return 0;
+}
+
+void menu()
+{
+    printf("------------- Menu -------------");
+    printf("\nDigite 1 para Saber seu Signo");
+    printf("\nDigite 2 para Encerrar o Programa");
 }
