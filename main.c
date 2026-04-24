@@ -28,7 +28,7 @@ int main()
         case 1:
 
                 system("cls");
-                printf("Digite seu dia de nasciment: ");
+                printf("Digite seu dia de nascimento: ");
                 scanf("%d", &dia);
 
                 printf("Digite seu mes de nascimento: ");
