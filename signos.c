@@ -4,7 +4,7 @@
 // Função para calculo de Signos
 
 // Função system("start ...."): É uma função da linguagem C da biblioteca <stdlib.h> que serve para realizar funções do
-// sistema operacional no cas para as imagens eu estou mando o sistema iniciar(start) a imagem no caminho que eu passei para ele
+// sistema operacional no caso para as imagens eu estou mandando o sistema iniciar(start) a imagem no caminho que eu passei para ele
 
 void signos(int dia, int mes)
 {

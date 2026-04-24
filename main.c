@@ -41,7 +41,7 @@ int main()
                     signos(dia, mes);
                 }
                 
-                // Timer para aparecer a Menagem de dia Invalido
+                // Timer para aparecer a Mensagem de dia Invalido
                 Sleep(1500);
 
             break;
