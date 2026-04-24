@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <windows.h>
 #include "signos.c"
+#include "validaMes.c"
 
-// Programa para saber qual é o signo do Usuário 
+// Programa para saber qual é o signo do Usuário
 // Dupla: Murilo Leandro e Liliane Perim
 // Data de Criação: 22/04/2026
-// Ultima Modificação: 23/04/2026
+// Ultima Modificação: 24/04/2026
+// Obs: Não possui palavras com assentos nos printf() pois no Windows o terminal mostra as palavras erradas
 
 void menu();
 
@@ -23,15 +26,23 @@ int main()
         switch (escolha)
         {
         case 1:
-            system("cls");
-            printf("Digite seu dia de nascimento: ");
-            scanf("%d", &dia);
 
-            printf("Digite seu mes de nascimento: ");
-            scanf("%d", &mes);
+                system("cls");
+                printf("Digite seu dia de nasciment: ");
+                scanf("%d", &dia);
 
-            // Função Prara saber o Signo
-            signos(dia, mes);
+                printf("Digite seu mes de nascimento: ");
+                scanf("%d", &mes);
+
+                // Função para Validar a quantidade de dias Conforme o Mês
+                if (validaDia(dia, mes))
+                {
+                    // Função Prara saber o Signo
+                    signos(dia, mes);
+                }
+                
+                // Timer para aparecer a Menagem de dia Invalido
+                Sleep(1500);
 
             break;
 
